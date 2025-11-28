@@ -17,7 +17,8 @@ export class CartService {
     // item.count--
     this.cartItems.map((el)=>{
       if(el.id === item.id){
-        el.count--
+        if(el.count)
+        {el.count--}
       }
       else
         el
